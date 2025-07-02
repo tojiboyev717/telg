@@ -209,7 +209,6 @@ async function dig(userId, botId) {
     }
 
     await bot.dig(block, 'ignore', 'raycast');
-    telegramBot.telegram.sendMessage(userId, `⛏️ *${botId} blok qazildi!*`, { parse_mode: 'Markdown' });
 
     dig(userId, botId);
   } catch (err) {
